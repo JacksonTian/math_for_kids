@@ -1,0 +1,52 @@
+body {
+    background: rgb(204, 204, 204);
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 18cm;
+}
+
+@media print {
+
+    body,
+    page {
+        background: white;
+        margin: 0;
+        box-shadow: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    page {
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+#table {
+    padding: 2cm 0.5cm;
+}
+
+#table td {
+    padding-top: 0.4cm;
+    padding-bottom: 0.4cm;
+}

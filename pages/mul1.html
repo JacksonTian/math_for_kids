@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://cdn.staticfile.org/bootstrap/5.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <page size="A4" layout="landscape">
+        <div id="table">
+
+        </div>
+    </page>
+<script>
+const list = [];
+for (let i = 1; i < 10; i++) {
+    for (let j = 1; j < 10; j++) {
+        list.push(`${i} x ${j} = __`);
+    }
+}
+
+const table = document.createElement('table');
+table.classList.add('table', 'table-bordered', 'border-primary');
+const tbody = document.createElement('tbody');
+for (let i = 1; i < 10; i++) {
+    const row = document.createElement('tr');
+    for (let j = 1; j < 10; j++) {
+        const col = document.createElement('td');
+        col.appendChild(document.createTextNode(list[(i - 1) * 9 + j - 1]));
+        row.appendChild(col);
+    }
+    tbody.appendChild(row);
+}
+table.appendChild(tbody);
+document.getElementById('table').appendChild(table);
+</script>
+</body>
+</html>
