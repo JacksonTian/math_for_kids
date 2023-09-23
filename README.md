@@ -18,11 +18,18 @@ TBD
 ### 乘法
 
 1. pages/mul1.html 页面是一个有序的乘法表。小朋友可以从1x1，到9x9，逐步推理出结果来。
+
+![](./figures/mul1.png)
+
 2. pages/mul2.html 页面是一个乱序的乘法表。小朋友在有序乘法上如果掌握得较好，就可以通过乱序的方式来让小朋友加深记忆。
+
+![](./figures/mul2.png)
 
 ### 除法
 
 1. pages/mul3.html 文件就是除法出题器，只是以乘法的形式呈现的，主要是为了让小朋友暂时不用理解除法，只要在乘法的基础上进行反推即可。
+
+![](./figures/mul3.png)
 
 ## License
 The [MIT](./LICENSE) license
