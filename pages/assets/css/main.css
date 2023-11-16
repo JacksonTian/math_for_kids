@@ -42,8 +42,15 @@ page[size="A4"][layout="landscape"] {
     }
 }
 
+#title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
 #table {
-    padding: 2cm 0.5cm;
+    padding: 1cm 0.5cm;
 }
 
 #table td {
